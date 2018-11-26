@@ -3,7 +3,11 @@ using namespace std;
 int main()
 {
 	int n,m;
+<<<<<<< HEAD
 	long long int a=0, b=1, c=1;
+=======
+	int a=0, b=1, c=1;
+>>>>>>> 8f71415e64d8208bef80e75454be1e174cd1180f
 	cin>>n>>m;
 	int v[n][m];
 	for(int i=0; i<n; i++)
@@ -15,6 +19,7 @@ int main()
 			if(i>j)
 				a += v[i][j];
 			if(i<j)
+<<<<<<< HEAD
 			{
 				// cout<<v[i][j]<<"    ";
 				b *= v[i][j];
@@ -38,6 +43,15 @@ int main()
 	// cout<<a<<endl;
 	// cout<<b<<endl;
 	// cout<<c<<endl;
+=======
+				b *= v[i][j];
+			if(i==j)
+				c *= v[i][j];
+		}
+	cout<<a<<endl;
+	cout<<b<<endl;
+	cout<<c<<endl;
+>>>>>>> 8f71415e64d8208bef80e75454be1e174cd1180f
 	cout<<(a+b)%c<<endl;
 	return 0;
 }
